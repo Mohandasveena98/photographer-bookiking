@@ -1,0 +1,9 @@
+<?php 
+	session_start();
+	$phname=$_SESSION['phname'];
+	$phid=$_SESSION['phid'];
+	if(!(isset($phid)))
+	{
+		header('location:index.php');
+	}
+?>
